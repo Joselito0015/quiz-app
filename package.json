@@ -1,0 +1,40 @@
+{
+    "name": "quiz-electron-app",
+    "version": "1.0.0",
+    "description": "Quiz app for Raspberry Pi",
+    "main": "main.js",
+    "scripts": {
+        "start": "electron .",
+        "dev": "concurrently \"npm run start\" \"npm run dev:react\"",
+        "dev:react": "vite",
+        "build": "vite build",
+        "build:raspberry": "vite build && electron-builder --linux --armv7l"
+    },
+    "build": {
+        "appId": "com.quiz.app",
+        "linux": {
+            "target": [
+                "deb",
+                "AppImage"
+            ],
+            "category": "Education"
+        }
+    },
+    "dependencies": {
+        "framer-motion": "^10.0.0",
+        "lucide-react": "^0.263.1",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "sqlite3": "^5.1.7"
+    },
+    "devDependencies": {
+        "@vitejs/plugin-react": "^4.0.0",
+        "autoprefixer": "^10.4.20",
+        "concurrently": "^8.0.1",
+        "electron": "^24.0.0",
+        "electron-builder": "^24.13.3",
+        "postcss": "^8.4.47",
+        "tailwindcss": "^3.4.14",
+        "vite": "^4.3.9"
+    }
+}

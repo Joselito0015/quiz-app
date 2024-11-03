@@ -1,0 +1,41 @@
+[
+	{
+		"pregunta_id": "1",
+		"texto": "¿Cuál es tu animal favorito?",
+		"imagen": "https://www.ciudaddelosangeles.com/wp-content/uploads/2014/08/iStock_000039515942_Small.jpg",
+		"opcionIzquierda": {
+			"texto": "Perro",
+			"siguiente_pregunta_id": "2"
+		},
+		"opcionDerecha": {
+			"texto": "Gato",
+			"siguiente_pregunta_id": "3"
+		}
+	},
+	{
+		"pregunta_id": "2",
+		"texto": "¿Te gustan los perros grandes o pequeños?",
+		"imagen": "https://static.fundacion-affinity.org/cdn/farfuture/PVbbIC-0M9y4fPbbCsdvAD8bcjjtbFc0NSP3lRwlWcE/mtime:1643275542/sites/default/files/los-10-sonidos-principales-del-perro.jpg",
+		"opcionIzquierda": {
+			"texto": "Grandes",
+			"siguiente_pregunta_id": null
+		},
+		"opcionDerecha": {
+			"texto": "Pequeños",
+			"siguiente_pregunta_id": null
+		}
+	},
+	{
+		"pregunta_id": "3",
+		"texto": "¿Prefieres gatos de pelo largo o corto?",
+		"imagen": "https://static.nationalgeographicla.com/files/styles/image_3200/public/nationalgeographic_1468962.webp?w=1600&h=900",
+		"opcionIzquierda": {
+			"texto": "Largo",
+			"siguiente_pregunta_id": null
+		},
+		"opcionDerecha": {
+			"texto": "Corto",
+			"siguiente_pregunta_id": null
+		}
+	}
+]
